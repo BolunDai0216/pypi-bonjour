@@ -1,6 +1,6 @@
 # pypi-bonjour
 
-Tutorial on publishing to PyPI.
+Tutorial on publishing to PyPI. Why Bonjour? Because there are already hundreds of variants of pypi-hello and pypi-nihao (pypi-你好).
 
 ## Tutorial
 
