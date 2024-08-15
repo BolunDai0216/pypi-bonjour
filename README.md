@@ -1,2 +1,3 @@
 # pypi-bonjour
-Example on publishing to PyPI
+
+Tutorial on publishing to PyPI.
