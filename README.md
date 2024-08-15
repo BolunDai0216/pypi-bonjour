@@ -17,3 +17,7 @@ This version publishes the barebone skeleton code to `pypi` which includes:
 ### v0.0.2: add dependencies
 
 This version adds NumPy as one of the dependencies.
+
+### v0.0.3: add pybind11-binded C++ function
+
+This version adds a function that is `pybind11`-binded from C++ from Python without the use of CMake.
