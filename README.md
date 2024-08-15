@@ -20,4 +20,4 @@ This version adds NumPy as one of the dependencies.
 
 ### v0.0.3: add pybind11-binded C++ function
 
-This version adds a function that is `pybind11`-binded from C++ from Python without the use of CMake.
+This version adds a function that is `pybind11`-binded from C++ from Python without the use of CMake. See [here](https://pybind11.readthedocs.io/en/stable/compiling.html#modules-with-setuptools) for an intro regarding using `pybind11` with `setuptools`.
