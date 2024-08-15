@@ -1,6 +1,6 @@
 [project]
 name = "pypi_bonjour"
-version = "0.0.3"
+version = "0.0.4"
 description = "Tutorial on publishing to PyPI"
 authors = [
   {name = "Bolun Dai", email = "daibolun19950216@gmail.com"},
