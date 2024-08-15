@@ -14,7 +14,7 @@ This version publishes the barebone skeleton code to `pypi` which includes:
 - a `pyproject.toml` file for enabling `pip install` of the package
 - the GitHub workflow that publishes the package to `pypi` upon release publish
 
-See this [video](https://youtu.be/J0ClmuAbiMA?si=83Xe7eJW5LNUr5yP) by Prof.Qiusheng Wu for an intro to PyPI packaging.
+See this [video](https://youtu.be/J0ClmuAbiMA?si=83Xe7eJW5LNUr5yP) by Prof.Qiusheng Wu for an introduction to PyPI packaging.
 
 ### v0.0.2: add dependencies
 
