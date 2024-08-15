@@ -24,7 +24,12 @@ This version adds NumPy as one of the dependencies.
 
 This version adds a function that is `pybind11`-binded from C++ from Python without the use of CMake. See [here](https://pybind11.readthedocs.io/en/stable/compiling.html#modules-with-setuptools) for an intro regarding using `pybind11` with `setuptools`.
 
-See this [video](https://youtu.be/80j-MRtHMek?si=f-o5LCoFGKja3P59) by anthonywritescode for an introduction to `manylinux`. To generate the `manylinux` wheels for the corresponding 
+See this [video](https://youtu.be/80j-MRtHMek?si=f-o5LCoFGKja3P59) by anthonywritescode for an introduction to `manylinux`. Building these `manylinux` wheels requires the installation of a docker image and building the wheels inside that docker image. This process is automated by `cibuildwheel`. Further more, to enable the build for different architectures on a computer one should download QEMU for architecture emulation
+
+```bash
+python3 -m pip install cibuildwheel
+sudo apt-get install qemu-system  # for Ubuntu, see https://www.qemu.org/download for more details
+```
 
 To build the wheels only for `CPython` (what is `PyPy`...), non alpine linux (what is `musllinux`...), `x86_64` and `aarch64` platforms use the following command:
 
@@ -56,3 +61,7 @@ twine upload dist/*
 ```
 
 The final result is [here](https://pypi.org/project/pypi-bonjour/0.0.3/#files). Note that the GitHub actions are not setup yet, so the action that this release triggered did not successfully upload the wheels to PyPI.
+
+### v0.0.4: added build and publish to PyPI GitHub workflow
+
+For details see [`build_publish_pypi.yml`](.github/workflows/build_publish_pypi.yml).
