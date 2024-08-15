@@ -14,11 +14,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Set up QEMU for arm64 builds
+        uses: docker/setup-qemu-action@v3
+        with:
+          platforms: "arm64"
+
       - name: Build wheels
         uses: pypa/cibuildwheel@v2.20.0
         env:
           CIBW_SKIP: "pp* *musllinux*"
-          CIBW_ARCHS: "x86_64 aarch64"
+          # CIBW_ARCHS: "x86_64 aarch64"
+          CIBW_ARCHS: "aarch64"
         with:
           package-dir: .
           output-dir: wheelhouse
