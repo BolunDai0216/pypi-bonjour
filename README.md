@@ -76,7 +76,3 @@ Added a `CMakeLists.txt` file to build the Python bindings using `pybind11` and 
 ### v0.0.6: added external C++ dependencies
 
 Added functions that uses `Eigen`. This involves installing `Eigen` in the `CIBW_BEFORE_ALL` script. However, there are certain limitations to CentOS [that needs to be taken cared of](https://stackoverflow.com/questions/74345206/centos-7-docker-yum-installation-gets-stuck).
-
-## v0.0.7: support MacOS
-
-Added MacOS build in GitHub workflows.

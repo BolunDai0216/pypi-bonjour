@@ -11,7 +11,7 @@ jobs:
     strategy:
       matrix:
         # macos-13 is an intel runner, macos-14 is apple silicon
-        os: [macos-14, ubuntu-latest]
+        os: [ubuntu-latest]
 
     steps:
       - uses: actions/checkout@v4
@@ -22,6 +22,7 @@ jobs:
             pip install setuptools wheel twine build
 
       - name: Set up QEMU for arm64 builds
+        if: runner.os == 'Linux'
         uses: docker/setup-qemu-action@v3
         with:
           platforms: "arm64"
