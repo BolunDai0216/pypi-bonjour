@@ -30,9 +30,9 @@ packages = ["pypi_bonjour"]
 include-package-data = true
 
 [tool.cibuildwheel]
-archs = "x86_64 aarch64"  # Build only for x86_64 and aarch64
+archs = "x86_64 aarch64"  # build only for x86_64 and aarch64
 before-all = "bash scripts/before_all.sh"
 before-build = "bash scripts/before_build.sh"
-manylinux-aarch64-image = "quay.io/pypa/manylinux_2_28_aarch64"  # Use the debian-based manylinux image
-manylinux-x86_64-image = "quay.io/pypa/manylinux_2_28_x86_64"  # Use the debian-based manylinux image
-skip = "pp* *musllinux*"  # Skip building for PyPy and musllinux
+manylinux-aarch64-image = "quay.io/pypa/manylinux_2_28_aarch64"  # it's still CentOS :(
+manylinux-x86_64-image = "quay.io/pypa/manylinux_2_28_x86_64"  # it's still CentOS :(
+skip = "pp* *musllinux*"  # skip building for PyPy and musllinux
