@@ -1,4 +1,4 @@
-# $\texttt{PyPI-Bonjour}$ :baguette_bread:
+# $\texttt{PyPI-Bonjour}$ 🥖
 
 Tutorial on publishing to PyPI.
 
