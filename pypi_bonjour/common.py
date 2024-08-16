@@ -13,5 +13,3 @@ def numpy_hello_world() -> float:
 
     random_number = np.random.rand()
     print(random_number)
-
-    return random_number
