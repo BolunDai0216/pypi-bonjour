@@ -1,6 +1,6 @@
-# pypi-bonjour
+# $\texttt{PyPI-Bonjour}$ 🥖
 
-Tutorial on publishing to PyPI. Why Bonjour? Because there are already hundreds of variants of pypi-hello and pypi-nihao (pypi-你好).
+Tutorial on publishing to PyPI. Why Bonjour, do you speak French? No, I do not speak French, but because there are already hundreds of variants of pypi-hello and pypi-nihao (pypi-你好), I need to find something that's not already taken, plus I liked the Paris Olympics.
 
 ## Tutorial
 
@@ -8,7 +8,7 @@ The `pypi-bonjour` package gradually adds more functionality over different vers
 
 ### v0.0.1: the hello-world example
 
-This version publishes the barebone skeleton code to `pypi` which includes:
+This version publishes the barebone skeleton code to `pypi`, which includes:
 
 - the source code with the single pure Python function `hello_world` (in contrast with pybinded functions)
 - a `pyproject.toml` file for enabling `pip install` of the package
@@ -24,14 +24,14 @@ This version adds NumPy as one of the dependencies.
 
 This version adds a function that is `pybind11`-binded from C++ from Python without the use of CMake. See [here](https://pybind11.readthedocs.io/en/stable/compiling.html#modules-with-setuptools) for an intro regarding using `pybind11` with `setuptools`.
 
-See this [video](https://youtu.be/80j-MRtHMek?si=f-o5LCoFGKja3P59) by anthonywritescode for an introduction to `manylinux`. Building these `manylinux` wheels requires the installation of a docker image and building the wheels inside that docker image. This process is automated by `cibuildwheel`. Further more, to enable the build for different architectures on a computer one should download QEMU for architecture emulation
+See this [video](https://youtu.be/80j-MRtHMek?si=f-o5LCoFGKja3P59) by anthonywritescode for an introduction to `manylinux`. Building these `manylinux` wheels requires the installation of a docker image and building the wheels inside that docker image. This process is automated by `cibuildwheel`. Furthermore, to enable the build for different architectures on a computer, one should download QEMU for architecture emulation
 
 ```bash
 python3 -m pip install cibuildwheel
 sudo apt-get install qemu-system  # for Ubuntu, see https://www.qemu.org/download for more details
 ```
 
-To build the wheels only for `CPython` (what is `PyPy`...), non alpine linux (what is `musllinux`...), `x86_64` and `aarch64` platforms use the following command:
+To build the wheels only for `CPython` (what is `PyPy`...), non-alpine Linux (what is `musllinux`...), `x86_64` and `aarch64` platforms use the following command:
 
 ```bash
 export CIBW_SKIP="pp* *musllinux*"
@@ -47,13 +47,13 @@ skip = "pp* *musllinux*"
 archs = "x86_64 aarch64" 
 ```
 
-then running `cibuildwheel` in the root directory. These commands will generate the built distributions in the `wheelhouse` directory, which can then be uploaded to PyPI using the command
+Then, run `cibuildwheel` in the root directory. These commands will generate the built distributions in the `wheelhouse` directory, which can then be uploaded to PyPI using the command
 
 ```bash
 twine upload wheelhouse/*
 ```
 
-Note that the source distribution (only the source code) is still missing, to generate it and upload it to PyPI run the commands
+Note that the source distribution (only the source code) is still missing. To generate it and upload it to PyPI, run the commands
 
 ```bash
 python3 -m build --sdist
