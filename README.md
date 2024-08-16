@@ -65,3 +65,7 @@ The final result is [here](https://pypi.org/project/pypi-bonjour/0.0.3/#files). 
 ### v0.0.4: added build and publish to PyPI GitHub workflow
 
 For details see [`build_publish_pypi.yml`](.github/workflows/build_publish_pypi.yml).
+
+### v0.0.5: added C++ projects that are built by CMake
+
+Added a `CMakeLists.txt` file to build the Python bindings using `pybind11` and `cmake`. The `setup.py` file is updated according to the [official `pybind11` + `cmake` example](https://github.com/pybind/cmake_example/blob/master/setup.py), if you prefer a video that goes through this process see [this one](https://youtu.be/H2wOlriHGmM?si=lF9kVxETq_msUT7a) by Facile Tutorials.
