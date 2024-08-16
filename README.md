@@ -1,7 +1,7 @@
 # $\texttt{PyPI-Bonjour}$ 🥖
 
 <a href="https://github.com/BolunDai0216/pypi-bonjour/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-cfd8dc?style=flat-square&labelColor=orange&color=lightgray" alt="License"/></a>
-<a href="https://badge.fury.io/py/pypi-bonjour"><img src="https://img.shields.io/pypi/v/pypi-bonjour?style=flat-square&labelColor=orange&color=lightgray" alt="PyPI version"></a>
+<a href="https://badge.fury.io/py/pypi-bonjour"><img src="https://img.shields.io/pypi/v/pypi-bonjour?style=flat-square&labelColor=darkorange&color=lightgray" alt="pypi version"></a>
 
 Tutorial on publishing to PyPI.
 
