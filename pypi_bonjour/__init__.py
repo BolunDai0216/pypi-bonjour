@@ -4,4 +4,5 @@ __author__ = "Bolun Dai"
 __email__ = "daibolun19950216@gmail.com"
 __version__ = "0.0.4"
 
-from .common_cpp import greet
+from .common import hello_world, numpy_hello_world
+from .common_cpp_cmake import greet_cmake

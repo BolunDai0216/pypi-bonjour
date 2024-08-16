@@ -22,7 +22,7 @@ dependencies = ["numpy>=1.26.4"]
 
 
 [build-system]
-requires = ["setuptools >= 61.0.0", "pybind11 >= 2.10.0"]
+requires = ["setuptools >= 61.0.0", "pybind11 >= 2.10.0", "cmake", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
