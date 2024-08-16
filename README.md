@@ -1,4 +1,4 @@
-# $\texttt{PyPI-Bonjour}$ 🥖
+# $\texttt{PyPI-Bonjour}$ :baguette_bread:
 
 Tutorial on publishing to PyPI. Why Bonjour, do you speak French? No, I do not speak French, but because there are already hundreds of variants of pypi-hello and pypi-nihao (pypi-你好), I need to find something that's not already taken, plus I liked the Paris Olympics.
 
