@@ -72,3 +72,7 @@ For details see [`build_publish_pypi.yml`](.github/workflows/build_publish_pypi.
 ### v0.0.5: added C++ projects that are built by CMake
 
 Added a `CMakeLists.txt` file to build the Python bindings using `pybind11` and `cmake`. The `setup.py` file is updated according to the [official `pybind11` + `cmake` example](https://github.com/pybind/cmake_example/blob/master/setup.py), if you prefer a video that goes through this process see [this one](https://youtu.be/H2wOlriHGmM?si=lF9kVxETq_msUT7a) by Facile Tutorials.
+
+### v0.0.6: added external C++ dependencies
+
+Added functions that uses `Eigen`. This involves installing `Eigen` in the `CIBW_BEFORE_ALL` script. However, there are certain limitations to CentOS [that needs to be taken cared of](https://stackoverflow.com/questions/74345206/centos-7-docker-yum-installation-gets-stuck).
