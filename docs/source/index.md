@@ -73,7 +73,7 @@ The final result is [here](https://pypi.org/project/pypi-bonjour/0.0.3/#files). 
 
 ### v0.0.4: added build and publish to PyPI GitHub workflow
 
-For details see [`build_publish_pypi.yml`](.github/workflows/build_publish_pypi.yml).
+For details see [`build_publish_pypi.yml`](https://github.com/BolunDai0216/pypi-bonjour/blob/main/.github/workflows/build_publish_pypi.yml).
 
 ### v0.0.5: added C++ projects that are built by CMake
 
