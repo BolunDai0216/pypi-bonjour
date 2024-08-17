@@ -1,5 +1,6 @@
 ---
 hide-toc: true
+title: "PyPI-Bonjour"
 ---
 
 # $\texttt{PyPI-Bonjour}$ 🥖
