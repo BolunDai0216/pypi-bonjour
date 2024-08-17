@@ -1,7 +1,10 @@
 # $\texttt{PyPI-Bonjour}$ 🥖
 
-[![image](https://img.shields.io/badge/License-MIT-cfd8dc?style=flat-square&labelColor=orange&color=lightgray)](https://github.com/BolunDai0216/pypi-bonjour/blob/main/LICENSE)
-[![image](https://img.shields.io/pypi/v/pypi-bonjour?style=flat-square&labelColor=orange&color=lightgray)](https://badge.fury.io/py/pypi-bonjour)
+[![License](https://img.shields.io/badge/License-MIT-cfd8dc?style=flat-square&labelColor=orange&color=lightgray)](https://github.com/BolunDai0216/pypi-bonjour/blob/main/LICENSE)
+[![PyPI Version](https://img.shields.io/pypi/v/pypi-bonjour?style=flat-square&labelColor=orange&color=lightgray)](https://badge.fury.io/py/pypi-bonjour)
+[![Tutorial](https://img.shields.io/badge/Tutorial-orange?style=flat-square&logo=github)](https://bolundai0216.github.io/pypi-bonjour/tutorial.html)
+[![Changelog](https://img.shields.io/badge/Changelog-orange?style=flat-square&logo=github)](https://bolundai0216.github.io/pypi-bonjour/index.html#changelog)
+
 
 **A consolidated tutorial on publishing to PyPI**, it shows how to:
 
