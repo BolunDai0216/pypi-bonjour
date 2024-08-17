@@ -80,3 +80,6 @@ myst_enable_extensions = [
     "html_admonition",
     "colon_fence",
 ]
+
+
+pygments_style = "default"
