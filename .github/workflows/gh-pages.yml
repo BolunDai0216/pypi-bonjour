@@ -26,7 +26,9 @@ jobs:
           python -m pip install -U sphinx
           python -m pip install sphinx-rtd-theme
           python -m pip install sphinx-autoapi
-          python -m pip install myst-parser nbsphinx sphinx_book_theme sphinx-autobuild sphinx-autoapi sphinxcontrib-youtube sphinx_design
+          python -m pip install myst-parser nbsphinx sphinx_book_theme 
+          python -m pip install sphinx-autobuild sphinx-autoapi sphinxcontrib-youtube 
+          python -m pip install sphinx_design sphinx-copybutton
 
       - name: make the sphinx docs
         run: |
