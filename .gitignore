@@ -169,6 +169,3 @@ cython_debug/
 
 # Wheel Builds
 wheelhouse/
-
-# Include Website Build
-!docs/build
