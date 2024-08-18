@@ -40,7 +40,7 @@ python3 -m pip install cibuildwheel
 sudo apt-get install qemu-system  # for Ubuntu, see https://www.qemu.org/download for more details
 ```
 
-To build the wheels only for `CPython` (what is `PyPy`...), non-alpine Linux (what is `musllinux`...), `x86_64` and `aarch64` platforms use the following command:
+To build the wheels only for `CPython` (what is `PyPy`...), non-alpine Linux (what is `musllinux`...), `x86_64` and `aarch64` platforms, use the following command:
 
 ```bash
 export CIBW_SKIP="pp* *musllinux*"
@@ -69,7 +69,7 @@ python3 -m build --sdist
 twine upload dist/*
 ```
 
-The final result is [here](https://pypi.org/project/pypi-bonjour/0.0.3/#files). Note that the GitHub actions are not setup yet, so the action that this release triggered did not successfully upload the wheels to PyPI.
+The final result is [here](https://pypi.org/project/pypi-bonjour/0.0.3/#files). Note that the GitHub actions are not set up yet, so the action that this release triggered did not successfully upload the wheels to PyPI.
 
 ### v0.0.4: added build and publish to PyPI GitHub workflow
 
@@ -81,7 +81,7 @@ Added a `CMakeLists.txt` file to build the Python bindings using `pybind11` and 
 
 ### v0.0.6: added external C++ dependencies
 
-Added functions that uses `Eigen`. This involves installing `Eigen` in the `CIBW_BEFORE_ALL` script. However, there are certain limitations to CentOS [that needs to be taken cared of](https://stackoverflow.com/questions/74345206/centos-7-docker-yum-installation-gets-stuck).
+Added functions that use `Eigen`. This involves installing `Eigen` in the `CIBW_BEFORE_ALL` script. However, there are certain limitations to CentOS [that need to be taken care of](https://stackoverflow.com/questions/74345206/centos-7-docker-yum-installation-gets-stuck).
 
 ## Contact
 
