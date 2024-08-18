@@ -17,14 +17,14 @@ pypi-bonjour/
 └── pyproject.toml
 ```
 
-The `pyproject.toml` file enables the `pip install` of the package. Then, to push the package to PyPI, you need to create a PyPI account and get the API token. Once that is done you can run 
+The `pyproject.toml` file enables the `pip install` of the package. Then, to push the package to PyPI, you need to create a PyPI account and get the API token. Once that is done, you can run 
 
 ```bash
 python3 -m build
 twine upload dist/*
 ```
 
-which builds the source distribution and a pure Python wheel (not platform specific) and uploads them to PyPI.
+which builds the source distribution and a pure Python wheel (not platform-specific) and uploads them to PyPI.
 
 ## Step 2: Add dependencies
 
@@ -83,9 +83,9 @@ pybind11_add_module(common_cpp_cmake pypi_bonjour/common_cpp_cmake.cpp)
 target_link_libraries(common_cpp_cmake PRIVATE Eigen3::Eigen)
 ```
 
-The `setup.py` file is updated according to the [official `pybind11` + `cmake` example](https://github.com/pybind/cmake_example/blob/master/setup.py). No need to change this at all, just need to copy it to your `setup.py` file.
+The `setup.py` file is updated per the [official `pybind11` + `cmake` example](https://github.com/pybind/cmake_example/blob/master/setup.py). **You don't need to change this; you just need to copy it to your `setup.py` file.**
 
-You also need to setup the `build-system` in the `pyproject.toml` file to use `pybind11`:
+You also need to set the `build-system` in the `pyproject.toml` file to use `pybind11`:
 
 ```toml
 [build-system]
@@ -107,7 +107,7 @@ manylinux-x86_64-image = "quay.io/pypa/manylinux_2_28_x86_64"  # it's still Cent
 skip = "pp* *musllinux*"  # skip building for PyPy and musllinux
 ```
 
-Then, run `cibuildwheel` in the root directory. These commands will generate the built distributions in the `wheelhouse` directory, which can then be uploaded to PyPI using the command
+Then, run `cibuildwheel` in the root directory. These commands will generate the built distributions in the `wheelhouse` directory, which can then be uploaded to PyPI using the command.
 
 ```bash
 twine upload wheelhouse/*
@@ -120,7 +120,7 @@ python3 -m build --sdist
 twine upload dist/*
 ```
 
-## Step 5: cibuildwheel with GitHub Actions
+## Step 5: `cibuildwheel` with GitHub Actions
 
 To automate the build and publish to PyPI process, you can use GitHub Actions. For details see [`build_publish_pypi.yml`](../../.github/workflows/build_publish_pypi.yml).
 
