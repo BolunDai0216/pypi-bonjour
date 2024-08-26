@@ -25,7 +25,7 @@ jobs:
             furo \
             myst-parser \
             nbsphinx \
-            sphinx
+            sphinx \
             sphinx-autobuild \
             sphinx-autoapi \
             sphinx-copybutton
