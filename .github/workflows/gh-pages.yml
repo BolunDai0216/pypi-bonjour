@@ -28,7 +28,7 @@ jobs:
             sphinx \
             sphinx-autobuild \
             sphinx-autoapi \
-            sphinx-copybutton
+            sphinx-copybutton \
             sphinx_design \
             sphinxcontrib-youtube \
             sphinx-rtd-theme
